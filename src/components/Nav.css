@@ -1,0 +1,23 @@
+img.logo{
+  width:10%;
+  height:10%;
+}
+.bg-img {
+  /* The image used */
+  /* background-image: url("header-image.jpg"); */
+  /* background-image: url("Logo.jpg"); */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
