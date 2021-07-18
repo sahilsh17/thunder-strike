@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import {SliderData} from './SliderData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 import './Slider.css';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const ImageSlider = ({slides}) => {
   const [current,setCurrent] = useState(0);
@@ -17,20 +19,13 @@ const ImageSlider = ({slides}) => {
     return null;
   }
   return (
-    <section className="slider">
-    <FaArrowAltCircleLeft className="left-arrow"  onClick={prevSlide}/>
-    <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
-
-      {SliderData.map((slide, index) => {
-        return(
-          <div className={index === current ? 'slide active' : 'slide'} key={index}>
-          {index === current && ( <img src={slide.image} alt="motor-image" className="image"/>)}
-         
-          </div>
-         
-        )
+    <div>
+      <AliceCarousel autoPlay autoPlayInterval="3000">
+      {slides.map(slide => {
+        return(<img src={slide.image} className="sliderimg"/>)
       })}
-    </section>
+</AliceCarousel>
+    </div>
   
 )
 };

@@ -1,5 +1,6 @@
 .card {
   width: 300px;
+  
   background: #fff;
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
@@ -127,3 +128,19 @@
   color: #ccc;
   font-size: 14px;
 }
+
+.section-products{
+  font-size: 50px;
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.card-section{
+  margin-left: 100px !important;
+  margin-top: 100px !important;
+
+}
+

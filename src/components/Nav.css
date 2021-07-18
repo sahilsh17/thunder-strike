@@ -6,6 +6,7 @@ img.logo {
 
 .nav-bar{
     background-color: black;
+    padding-bottom: 1px;
 }
 .mr-auto{
     float: right;

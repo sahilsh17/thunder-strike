@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
                 <div class="col item social"><FontAwesomeIcon className="social-icon" size="2x" icon={faFacebookF} /><FontAwesomeIcon className="social-icon" size="2x" icon={faTwitter} /><FontAwesomeIcon className="social-icon" size="2x" icon={faSnapchatGhost} /><FontAwesomeIcon className="social-icon" size="2x" icon={faInstagram} /></div>
             </div>
-            <p class="copyright">Releaf © 2021</p>
+            <p class="copyright">Thunder Strike © 2021</p>
         </div>
     </footer>
 </div>
