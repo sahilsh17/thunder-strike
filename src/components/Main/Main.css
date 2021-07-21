@@ -1,0 +1,36 @@
+section.description{
+  width: 100%;
+  display: flex;
+  padding: 7% 15%;
+  align-items: space-between;
+  align-content: space-around;
+  font-family: 'Heebo', sans-serif;
+}
+.section-description{
+  align-items: start;
+  text-align: left;
+}
+.content-wrap{
+  display: flex;
+  align-items: space-between;
+  align-content: space-around;
+}
+.section-image{
+  padding-left: 100px;
+}
+div.section-image > img {
+  width: 300px;
+  height: 400px;
+}
+.description-btn{
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
+  background-color: #02a94d;
+  color:white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 330px;
+  height: 64px;
+  line-height: 64px;
+ margin-top: 4em;
+}

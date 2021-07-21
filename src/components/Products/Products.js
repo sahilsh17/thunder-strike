@@ -1,36 +1,39 @@
 import React from 'react'
 import {ProductList} from './ProductList';
 import './Products.css';
-import {Card, Icon} from 'semantic-ui-react';
-
+import {Card} from 'react-bootstrap';
 function Products() {
 
   return (
-    <div className="card-section">
-      <hi className="section-products">Featured Products</hi>
-      <div className="container row">
-      {ProductList.map((product, index)=> {
-        return(<div className="card col-sm-4" key={index}>
-
-<div className="card__media container">
-  <img className="card-image" src={product.image} alt="product image"/>
-</div>
-
-<div className="card__content">
-  <header className="card__header">
-    <h2 className="card__title">{product.name}</h2>
-  </header>
-  <p className="card__excerpt">{product.description}</p>
-</div>
-</div>
-
-
-)
-        
-      })}
-      </div>
-    </div>
+    <>
+    <h1>Products</h1>
+    <div className="row card-container">
+   
+    {ProductList.map(product => {
+      
+      return (
+        <>
+        <Card className="card col-sm-4" style={{ width: '24rem' }}>
+      <Card.Img variant="top" src={product.image} />
+      <Card.Body>
+      <Card.Title>{product.name}</Card.Title>
+      <Card.Text>
+        {product.description}
+      </Card.Text>
+     
+      </Card.Body>
+      </Card>
+      </>
+      )
+      
+    })}
+   
+    
+  
+  </div>
+  </>
   )
+ 
 }
 
 export default Products
