@@ -15,9 +15,6 @@ function Main() {
     </div>
     <div className="section-image">
       <img alt="" src="description.jpeg" /> 
-      <button className="description-btn">
-       Checkout our products
-      </button>
     </div>
   </section>
   )

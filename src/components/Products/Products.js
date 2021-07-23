@@ -12,17 +12,27 @@ function Products() {
     {ProductList.map(product => {
       
       return (
+       
         <>
-        <Card className="card col-sm-4" style={{ width: '24rem' }}>
-      <Card.Img variant="top" src={product.image} />
-      <Card.Body>
-      <Card.Title>{product.name}</Card.Title>
-      <Card.Text>
-        {product.description}
-      </Card.Text>
-     
-      </Card.Body>
-      </Card>
+       
+         <article class="card">
+         <div class="card__media">
+           <img src={product.image} alt="Card image" />
+         </div>
+
+         <div class="card__content">
+           <header class="card__header">
+             <h2 class="card__title">{product.name}</h2>
+            
+           </header>
+           <p class="card__excerpt">{product.description}</p>
+           <h2 class="card__title">{product.price}</h2>
+
+           <a href ={product.link}> <button >Click to buy</button></a>
+         </div>
+
+        </article>
+        
       </>
       )
       

@@ -9,6 +9,7 @@ section.description{
 .section-description{
   align-items: start;
   text-align: left;
+  
 }
 .content-wrap{
   display: flex;
@@ -22,15 +23,57 @@ div.section-image > img {
   width: 300px;
   height: 400px;
 }
-.description-btn{
-  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
-  background-color: #02a94d;
-  color:white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  width: 330px;
-  height: 64px;
-  line-height: 64px;
- margin-top: 4em;
+
+@media screen and (max-width: 800px) {
+  .content-wrap, .img {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: block;
+  }
+  .section-description{
+    width: 100%;
+  }
+  .section-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .description-btn{
+    width: 250px;
+  }
+  .section-image{
+    width: 100%;
+    text-align: center;
+  }
+  section.description{
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content-wrap {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: block;
+    
+  }
+  div.section-image > img {
+    width: 250px;
+    height: 350px;
+  }
+  .section-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .description-btn{
+    width: 250px;
+  }
+  .section-description{
+    width: 100%;
+  }
+  section.description{
+    display: block;
+  }
 }

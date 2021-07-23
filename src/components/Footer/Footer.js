@@ -10,24 +10,9 @@ const Footer = () => {
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Careers</a></li>
-
-
-                    </ul>
-                </div>
-                <div class="col-md-6 item text">
-                    <h3>Thunder Strike</h3>
-                    <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Help Centre</a></li>
-                    </ul>
-                </div>
-                <div class="col item social"><FontAwesomeIcon className="social-icon" size="2x" icon={faFacebookF} /><FontAwesomeIcon className="social-icon" size="2x" icon={faTwitter} /><FontAwesomeIcon className="social-icon" size="2x" icon={faSnapchatGhost} /><FontAwesomeIcon className="social-icon" size="2x" icon={faInstagram} /></div>
+                
+               
+                <div class="col item social"><a href="https://www.facebook.com/profile.php?id=100070870130743"><FontAwesomeIcon className="social-icon" size="2x" icon={faFacebookF} /></a> <a href="https://instagram.com/thunderstrike.canada?utm_medium=copy_link"><FontAwesomeIcon  className="social-icon" size="2x" icon={faInstagram} /></a></div>
             </div>
             <p class="copyright">Thunder Strike © 2021</p>
         </div>

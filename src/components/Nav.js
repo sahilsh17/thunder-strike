@@ -11,14 +11,7 @@ function Navigation() {
       <Navbar className="nav-bar" collapseOnSelect expand="lg" variant="dark">
       <img className="logo" src="logo.jpg"/>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link href="#home">HOME</Nav.Link>
-            <Nav.Link href="#about">ABOUT</Nav.Link>
-            <Nav.Link href="#contact">CONTACT</Nav.Link>
-          </Nav>
-
-        </Navbar.Collapse>
+       
       </Navbar>
    
     
