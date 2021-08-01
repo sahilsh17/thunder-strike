@@ -3,15 +3,10 @@ export const ProductList = [
   {  
     name: 'Armoured Motorcycle flannel shirt',
     description:  `- Men's Armoured Checkered Flannel Biker Shirt made of Durable Poly/Cotton Reinforced with fully DuPont Kevlar lined.
-
     - Removable CE Approved Armour Pads on Shoulders, Elbows and Back.
-
     - YKK center front zip as well as snaps.
-
     - 2 Upper chest button fastening pockets.
-
     - Button adjustable cuffs.
-
     - Removable hoodie.`,
     image: 'product4.jpg',
     link: `https://www.facebook.com/marketplace/item/1151409232023594`,
