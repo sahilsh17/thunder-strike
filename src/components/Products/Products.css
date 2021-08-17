@@ -3,8 +3,13 @@
   background: #fff;
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  transform: scale(1.015);
+  transition: 0.15s linear;
 }
-
+.wrapper{
+  padding: 2px;
+}
 /* Add box shadow to entire card on hover */
 .card:hover {
   box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.3);
@@ -38,7 +43,9 @@
 .card__media img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 350px;
+  background-color: white;
+
 }
 
 .card__date {
@@ -116,6 +123,7 @@
   color: initial;
   margin: 0 0 10px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .card__subtitle {
@@ -131,12 +139,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
-h1{
-  color: black;
+.product-section{
+  background-color: rgb(0, 0, 0);
+
+}
+
+h1.product-title{
+  color: White;
+  font-family: 'Chivo', sans-serif;
+font-family: 'Roboto', sans-serif;
+padding: 50px;
+font-weight: bold;
 }
 button {
-  display: none; /* Hide button */
+  display: block; 
   box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
   background-color: #02a94d;
   color:white;
@@ -147,8 +165,18 @@ button {
   height: 64px;
   line-height: 64px;
   margin-top: 4em;
-  }
+  position: absolute;  
+  top: 200px;
 
-  .card:hover button {
-  display: block; /* On :hover of div show button */
   }
+  .overlay{
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  
+  .wrapper:hover .overlay{
+    opacity: 1;
+    transition: 0.2s linear;
+
+  }
+  

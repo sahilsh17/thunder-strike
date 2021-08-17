@@ -6,7 +6,8 @@ function Products() {
 
   return (
     <>
-    <h1>Products</h1>
+    <div className="product-section">
+     <h1 className="product-title">Products</h1>
     <div className="row card-container">
    
     {ProductList.map(product => {
@@ -14,25 +15,26 @@ function Products() {
       return (
        
         <>
-       
-         <article class="card">
-         <div class="card__media">
+         <div className="wrapper">
+         <article className="card">
+         <div className="card__media">
            <img src={product.image} alt="Card image" />
          </div>
 
-         <div class="card__content">
-           <header class="card__header">
-             <h2 class="card__title">{product.name}</h2>
+         <div className="card__content">
+           <header className="card__header">
+             <h2 className="card__title">{product.name}</h2>
             
            </header>
-           <p class="card__excerpt">{product.description}</p>
-           <h2 class="card__title">{product.price}</h2>
-
+           {/* <p class="card__excerpt">{product.description}</p> */}
+           <h2 className="card__title">{product.price}</h2>
+           <div className="overlay">
            <a href ={product.link}> <button >Click to buy</button></a>
+           </div>
          </div>
-
+         
         </article>
-        
+        </div>
       </>
       )
       
@@ -40,6 +42,7 @@ function Products() {
    
     
   
+  </div>
   </div>
   </>
   )

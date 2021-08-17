@@ -14,6 +14,7 @@ const Footer = () => {
             </div>
             <p class="copyright">Thunder Strike © 2021</p>
         </div>
+      
     </footer>
 </div>
   );
