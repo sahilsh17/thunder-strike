@@ -1,7 +1,7 @@
 import React from 'react'
 import {ProductList} from './ProductList';
 import './Products.css';
-import {Card} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 function Products() {
 
   return (
@@ -27,9 +27,9 @@ function Products() {
             
            </header>
            {/* <p class="card__excerpt">{product.description}</p> */}
-           <h2 className="card__title">{product.price}</h2>
+           <h2 className="card__price">{product.price}</h2>
            <div className="overlay">
-           <a href ={product.link}> <button >Click to buy</button></a>
+           <Link to={{pathname:'/product-details', state: {image: product.image, title: product.name, price: product.price, description: product.description, link:product.link}}}> <button >View</button> </Link>
            </div>
          </div>
          

@@ -37,7 +37,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 .card__media img {
@@ -148,15 +147,14 @@
 
 h1.product-title{
   color: White;
-  font-family: 'Chivo', sans-serif;
-font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
 padding: 50px;
 font-weight: bold;
 }
 button {
   display: block; 
   box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
-  background-color: #02a94d;
+  background-color: #da0b0b;
   color:white;
   font-size: 16px;
   border: none;
@@ -172,6 +170,11 @@ button {
   .overlay{
     opacity: 0;
     transition: 0.2s linear;
+  }
+  .card__price{
+    color: initial;
+  margin: 0 0 10px;
+  font-size: 15px;
   }
   
   .wrapper:hover .overlay{

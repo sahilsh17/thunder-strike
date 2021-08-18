@@ -10,9 +10,9 @@ const Footer = () => {
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col item social"><a href="https://www.facebook.com/profile.php?id=100070870130743"><FontAwesomeIcon className="social-icon" size="2x" icon={faFacebookF} /></a> <a href="https://instagram.com/thunderstrike.canada?utm_medium=copy_link"><FontAwesomeIcon  className="social-icon" size="2x" icon={faInstagram} /></a></div>
+                <div className="col item social"><a href="https://www.facebook.com/profile.php?id=100070870130743"><FontAwesomeIcon className="social-icon" size="2x" icon={faFacebookF} /></a> <a href="https://instagram.com/thunderstrike.canada?utm_medium=copy_link"><FontAwesomeIcon  className="social-icon" size="2x" icon={faInstagram} /></a></div>
             </div>
-            <p class="copyright">Thunder Strike © 2021</p>
+            <p className="copyright">Thunder Strike © 2021</p>
         </div>
       
     </footer>
