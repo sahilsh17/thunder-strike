@@ -58,7 +58,7 @@ button.buy {
 h6{
   font-family: 'Oswald', sans-serif;
   color: black;
-  padding: 10px 10px 0 10px;
+  padding: 40px 10px 0 10px;
   text-align: left;
 
 }
@@ -124,6 +124,10 @@ h4.back-to-home-link:hover{
     width: 410px;
     height: 487px;
   }
+  .nav-bar > img.logo{
+    height: 70px;
+    width: 114px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -187,5 +191,9 @@ h4.back-to-home-link:hover{
   .product-image{
     width: 310px;
     height: 387px;
+  }
+  .nav-bar > img.logo{
+    height: 70px;
+    width: 114px;
   }
 }

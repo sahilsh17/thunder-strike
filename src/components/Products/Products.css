@@ -8,7 +8,7 @@
   transition: 0.15s linear;
 }
 .wrapper{
-  padding: 2px;
+  padding: 10px;
 }
 /* Add box shadow to entire card on hover */
 .card:hover {
@@ -41,7 +41,7 @@
 
 .card__media img {
   display: block;
-  max-width: 100%;
+  max-width: 99%;
   height: 350px;
   background-color: white;
 

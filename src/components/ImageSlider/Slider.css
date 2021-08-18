@@ -3,6 +3,6 @@
   height: 700px;
   object-fit: cover
 }
-.alice-carousel__prev-btn{
-  text-align:none !important;
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item{
+  display: none !important;
 }
