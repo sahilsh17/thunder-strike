@@ -18,7 +18,7 @@ function Products() {
          <div className="wrapper">
          <article className="card">
          <div className="card__media">
-           <img src={product.image} alt="Card image" />
+           <img src={product.SliderData[0].image} alt="Card image" />
          </div>
 
          <div className="card__content">
@@ -29,7 +29,7 @@ function Products() {
            {/* <p class="card__excerpt">{product.description}</p> */}
            <h2 className="card__price">{product.price}</h2>
            <div className="overlay">
-           <Link to={{pathname:'/product-details', state: {image: product.image, title: product.name, price: product.price, description: product.description, link:product.link}}}> <button >View</button> </Link>
+           <Link to={{pathname:'/product-details', state: {SliderData: product.SliderData, title: product.name, price: product.price, description: product.description, link:product.link}}}> <button className="view">View</button> </Link>
            </div>
          </div>
          

@@ -1,9 +1,10 @@
 import React from 'react'
 import './ProductDetail.css';
 import { Link } from 'react-router-dom';
+import ImageSliderNoAnimation from '../ImageSliderNoAnimation/ImageSliderNoAnimation';
 
 function ProductDetail(props) {
-  const image = props.location.state.image;
+  const SliderData = props.location.state.SliderData;
   const title = props.location.state.title;
   const price = props.location.state.price;
   const description = props.location.state.description; 
@@ -11,7 +12,7 @@ function ProductDetail(props) {
   return (
     <>
     <div className="detail-section">
-      <img className="product-image" src = {image} />
+      <ImageSliderNoAnimation slides={SliderData}/>
       <div className="product-summary">
        <h1 className="product-name">{title}</h1>
        <p className= "product-price">{price}</p>

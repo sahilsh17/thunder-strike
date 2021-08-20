@@ -8,9 +8,9 @@ export const ProductList = [
     - 2 Upper chest button fastening pockets.
     - Button adjustable cuffs.
     - Removable hoodie.`,
-    image: 'product4.jpg',
     link: `https://www.facebook.com/marketplace/item/1151409232023594`,
-    price: '$140 CAD'
+    price: '$140 CAD',
+    SliderData: [{image:'FlannelShirt/image1.jpg'},{image:'FlannelShirt/image2.jpg'},{image:'FlannelShirt/image3.jpg'}]
   },
   {  
     name: 'Armored Riding Jeans',
@@ -18,9 +18,10 @@ export const ProductList = [
     - Lined cotton hand pockets, hip and knee protector pockets.
     - Aramid Kevlar ®️ fiber reinforcement in all high abrasion and impact areas.				
     - Easy detachable/removable knee and hip CE certified protectors.` ,
-    image: 'product2.jpg',
     link: `https://www.facebook.com/marketplace/item/1040271989710133`,
-    price: '$100 CAD'
+    price: '$100 CAD',
+    SliderData: [{image:'Jeans/image1.jpg'},{image:'Jeans/image2.jpg'}]
+
   },
   {  
     name: 'Motorcycle gloves',
@@ -29,9 +30,9 @@ export const ProductList = [
     Antiskid design on the palm.
     Extra protectors for better protection.
     Velcro strap at wrist for snug fit.`,
-    image: 'product3.jpg',
     link: `https://www.facebook.com/marketplace/item/370856857722111`,
-    price: '$40 CAD'
+    price: '$40 CAD',
+    SliderData: [{image:'Gloves/image1.jpg'},{image:'Gloves/image2.jpg'},{image:'Gloves/image3.jpg'},{image:'Gloves/image4.jpg'},{image:'Gloves/image5.jpg'}]
   },
   {
     name: 'Armoured Motorcycle flannel Jacket',
@@ -44,8 +45,8 @@ export const ProductList = [
     2 external pockets plus inner mobile pocket.
     Fully Reflective for night time visibility.
     Waist connection zip for motorcycle pants.`,
-    image: 'product5.jpg',
     link: `https://www.facebook.com/marketplace/item/155190503373040`,
-    price: '$150 CAD'
+    price: '$150 CAD',
+    SliderData: [{image:'Jacket/image1.jpg'},{image:'Jacket/image2.jpg'},{image:'Jacket/image3.jpg'},{image:'Jacket/image4.jpg'},{image: 'Jacket/image5.jpg'}]
   }
 ]
