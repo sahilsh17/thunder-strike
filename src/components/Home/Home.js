@@ -10,8 +10,7 @@ import {SliderData} from '../ImageSlider/SliderData';
 function Home() {
   return (
     <>
-    <ImageSlider slides={SliderData}/>
-    <Main /> 
+    <ImageSlider slides={SliderData}/> 
     <Products />
     </>
    

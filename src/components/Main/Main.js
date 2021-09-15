@@ -14,7 +14,7 @@ function Main() {
         </div>
     </div>
     <div className="section-image">
-      <img alt="" src="description.jpeg" /> 
+      <img alt="" src="Thunderstrike_logo.jpeg" /> 
     </div>
   </section>
   )

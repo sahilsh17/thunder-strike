@@ -2,10 +2,11 @@
   width: 300px;
   background: #fff;
   transition: box-shadow 0.3s ease-in-out;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+ 
   position: relative;
   transform: scale(1.015);
   transition: 0.15s linear;
+  border: 0px !important;
 }
 .wrapper{
   padding: 10px;
@@ -122,7 +123,7 @@
   color: initial;
   margin: 0 0 10px;
   font-size: 20px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .card__subtitle {
@@ -140,10 +141,7 @@
   align-items: center;
   padding-bottom: 50px;
 }
-.product-section{
-  background-color: rgb(0, 0, 0);
 
-}
 
 h1.product-title{
   color: White;
@@ -184,4 +182,71 @@ button {
   }
   button.view{
     font-weight: bolder;
+  }
+  @media screen and (max-width: 520px) {
+    h1.product-name{
+      font-family: 'Oswald', sans-serif;
+      color: black;
+      text-transform: uppercase;
+      padding: 50px 0 0 0;
+      text-align: center;
+    }
+    .detail-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 50px;
+      word-wrap: break-word;
+      width: 100vw;
+    }
+    .product-summary {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      align-items:center;
+      height: 80%;
+      width:90vw;
+    }
+    button.add-to-cart {
+      position: relative;
+      top: auto;
+      box-shadow:none;
+      margin-top: 20px;
+      width: 90vw;
+    }
+    button.buy {
+      position: relative;
+      top: auto;
+      box-shadow:none;
+      margin-top: 20px;
+      background-color:rgb(64, 74, 160);
+      width: 90vw;
+      
+    }
+    
+    .product-price {
+      text-align: left;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 18px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .product-description{
+      padding: 10px;
+     word-wrap: break-word;
+      text-align: left;
+      border: 1px solid rgb(194, 194, 194);
+      width: 90vw;
+  
+    }
+    .product-image{
+      width: 310px;
+      height: 387px;
+    }
+    .nav-bar > img.logo{
+      height: 70px;
+      width: 114px;
+    }
   }

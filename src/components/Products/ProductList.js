@@ -9,7 +9,7 @@ export const ProductList = [
     - Button adjustable cuffs.
     - Removable hoodie.`,
     link: `https://www.facebook.com/marketplace/item/1151409232023594`,
-    price: '$140 CAD',
+    price: 140,
     SliderData: [{image:'FlannelShirt/image1.jpg'},{image:'FlannelShirt/image2.jpg'},{image:'FlannelShirt/image3.jpg'}]
   },
   {  
@@ -19,7 +19,7 @@ export const ProductList = [
     - Aramid Kevlar ®️ fiber reinforcement in all high abrasion and impact areas.				
     - Easy detachable/removable knee and hip CE certified protectors.` ,
     link: `https://www.facebook.com/marketplace/item/1040271989710133`,
-    price: '$100 CAD',
+    price: 100,
     SliderData: [{image:'Jeans/image1.jpg'},{image:'Jeans/image2.jpg'}]
 
   },
@@ -31,7 +31,7 @@ export const ProductList = [
     Extra protectors for better protection.
     Velcro strap at wrist for snug fit.`,
     link: `https://www.facebook.com/marketplace/item/370856857722111`,
-    price: '$40 CAD',
+    price:40,
     SliderData: [{image:'Gloves/image1.jpg'},{image:'Gloves/image2.jpg'},{image:'Gloves/image3.jpg'},{image:'Gloves/image4.jpg'},{image:'Gloves/image5.jpg'}]
   },
   {
@@ -46,7 +46,7 @@ export const ProductList = [
     Fully Reflective for night time visibility.
     Waist connection zip for motorcycle pants.`,
     link: `https://www.facebook.com/marketplace/item/155190503373040`,
-    price: '$150 CAD',
-    SliderData: [{image:'Jacket/image1.jpg'},{image:'Jacket/image2.jpg'},{image:'Jacket/image3.jpg'},{image:'Jacket/image4.jpg'},{image: 'Jacket/image5.jpg'}]
+    price:150,
+    SliderData: [{image:'Jacket/image4.jpg'},{image:'Jacket/image1.jpg'},{image:'Jacket/image2.jpg'},{image:'Jacket/image3.jpg'},{image: 'Jacket/image5.jpg'}]
   }
 ]

@@ -1,13 +1,10 @@
 img.logo {
-    width: 10%;
-    height: 10%;
+    width: 80px;
+    height: 80px;
     display: block;
 }
 
 .nav-bar{
     background-color: black;
     padding-bottom: 1px;
-}
-.mr-auto{
-    float: right;
 }

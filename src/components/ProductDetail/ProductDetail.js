@@ -1,14 +1,42 @@
-import React from 'react'
+import {React, useState} from 'react'
 import './ProductDetail.css';
 import { Link } from 'react-router-dom';
 import ImageSliderNoAnimation from '../ImageSliderNoAnimation/ImageSliderNoAnimation';
+import StripeCheckout from 'react-stripe-checkout';
 
 function ProductDetail(props) {
+  
   const SliderData = props.location.state.SliderData;
   const title = props.location.state.title;
   const price = props.location.state.price;
   const description = props.location.state.description; 
   const link = props.location.state.link;
+  const [Product, setProduct] = useState({
+    name:title, 
+    price:price, 
+    description:description});
+    const makePayment = token => {
+      const body = {
+        token,
+        Product
+
+      }
+      const headers = {
+        "Content-Type": "application/json",
+      }
+
+      return fetch(`http://localhost:8282/payment`,{
+        method: "POST",
+        headers,
+        body: JSON.stringify(body)
+      })
+      .then(response => {
+        console.log(response);
+        const {status} = response;
+        console.log(status);
+      })
+      .catch(error => console.log(error));
+    }
   return (
     <>
     <div className="detail-section">
@@ -18,7 +46,14 @@ function ProductDetail(props) {
        <p className= "product-price">{price}</p>
      
 
+       
+       <StripeCheckout 
+       stripeKey="pk_test_51JRq1hLpFVTS9LnR6CrcpNiYImRKZHwkLot6xx66zycObaBzKQody2pmRVPExz2jkn3VpELlvXoztK3mzAA72ywr00LQrqKk7Z" 
+       token={makePayment} 
+       name="By React"
+       amount={price * 100} >
        <button className="add-to-cart">ADD TO CART</button>
+       </StripeCheckout>
        <a href={link}><button className="buy">Buy on Facebook Marketplace</button></a>
       
        <h6>Product Description</h6>
